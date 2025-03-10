@@ -48,12 +48,7 @@ app.post('/upload',isLoggedIn, upload.single("image"), async(req, res) =>{
     res.redirect("/profile")    
 });
 
-// app.get('/test', (req, res) =>{
-//     res.render("test");
-// });
-// app.post('/upload', upload.single("image"), (req, res) =>{
-//     console.log(req.file);
-// });
+
 app.get('/login', (req,res) =>{
     res.render("login");
 });
